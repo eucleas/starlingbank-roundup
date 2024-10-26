@@ -158,7 +158,7 @@ public class SavingGoalsService {
         if (transactions == null || transactions.isEmpty()) {
             return 0;
         }
-
+//last version
         return transactions.stream()
                 .filter(item -> "OUT".equals(item.getDirection()))
                 .filter(item-> item.getAmount().getMinorUnits() % ROUND_UP_CONSTANT!=0)
